@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58B2529418B8FDAC00ACC2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529318B8FDAC00ACC2FF /* Foundation.framework */; };
+		58B2529618B8FDAC00ACC2FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529518B8FDAC00ACC2FF /* CoreGraphics.framework */; };
+		58B2529818B8FDAC00ACC2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529718B8FDAC00ACC2FF /* UIKit.framework */; };
+		58B2529E18B8FDAC00ACC2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58B2529C18B8FDAC00ACC2FF /* InfoPlist.strings */; };
+		58B252A018B8FDAC00ACC2FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B2529F18B8FDAC00ACC2FF /* main.m */; };
+		58B252A418B8FDAC00ACC2FF /* PIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B252A318B8FDAC00ACC2FF /* PIAppDelegate.m */; };
+		58B252A718B8FDAC00ACC2FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B252A518B8FDAC00ACC2FF /* Main.storyboard */; };
+		58B252AA18B8FDAC00ACC2FF /* PIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B252A918B8FDAC00ACC2FF /* PIViewController.m */; };
+		58B252AC18B8FDAC00ACC2FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B252AB18B8FDAC00ACC2FF /* Images.xcassets */; };
+		58B252B318B8FDAC00ACC2FF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B252B218B8FDAC00ACC2FF /* XCTest.framework */; };
+		58B252B418B8FDAC00ACC2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529318B8FDAC00ACC2FF /* Foundation.framework */; };
+		58B252B518B8FDAC00ACC2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529718B8FDAC00ACC2FF /* UIKit.framework */; };
+		58B252BD18B8FDAC00ACC2FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58B252BB18B8FDAC00ACC2FF /* InfoPlist.strings */; };
+		58B252BF18B8FDAC00ACC2FF /* PICircularDialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B252BE18B8FDAC00ACC2FF /* PICircularDialTests.m */; };
+		58B252CE18B8FDFF00ACC2FF /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B252CA18B8FDFF00ACC2FF /* circle.png */; };
+		58B252CF18B8FDFF00ACC2FF /* CircleBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B252CB18B8FDFF00ACC2FF /* CircleBackground.png */; };
+		58B252D018B8FDFF00ACC2FF /* ViewBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B252CC18B8FDFF00ACC2FF /* ViewBackground.png */; };
+		58B252D118B8FDFF00ACC2FF /* ViewBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B252CD18B8FDFF00ACC2FF /* ViewBackground@2x.png */; };
+		58B252D618B8FE1400ACC2FF /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B252D318B8FE1400ACC2FF /* CircleView.m */; };
+		58B252D718B8FE1400ACC2FF /* PIDialerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B252D518B8FE1400ACC2FF /* PIDialerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58B252B618B8FDAC00ACC2FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58B2528818B8FDAC00ACC2FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58B2528F18B8FDAC00ACC2FF;
+			remoteInfo = PICircularDial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58B2529018B8FDAC00ACC2FF /* PICircularDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICircularDial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B2529318B8FDAC00ACC2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58B2529518B8FDAC00ACC2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58B2529718B8FDAC00ACC2FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58B2529B18B8FDAC00ACC2FF /* PICircularDial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PICircularDial-Info.plist"; sourceTree = "<group>"; };
+		58B2529D18B8FDAC00ACC2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58B2529F18B8FDAC00ACC2FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58B252A118B8FDAC00ACC2FF /* PICircularDial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PICircularDial-Prefix.pch"; sourceTree = "<group>"; };
+		58B252A218B8FDAC00ACC2FF /* PIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIAppDelegate.h; sourceTree = "<group>"; };
+		58B252A318B8FDAC00ACC2FF /* PIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIAppDelegate.m; sourceTree = "<group>"; };
+		58B252A618B8FDAC00ACC2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58B252A818B8FDAC00ACC2FF /* PIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIViewController.h; sourceTree = "<group>"; };
+		58B252A918B8FDAC00ACC2FF /* PIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIViewController.m; sourceTree = "<group>"; };
+		58B252AB18B8FDAC00ACC2FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		58B252B118B8FDAC00ACC2FF /* PICircularDialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PICircularDialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B252B218B8FDAC00ACC2FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		58B252BA18B8FDAC00ACC2FF /* PICircularDialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PICircularDialTests-Info.plist"; sourceTree = "<group>"; };
+		58B252BC18B8FDAC00ACC2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58B252BE18B8FDAC00ACC2FF /* PICircularDialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PICircularDialTests.m; sourceTree = "<group>"; };
+		58B252CA18B8FDFF00ACC2FF /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		58B252CB18B8FDFF00ACC2FF /* CircleBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleBackground.png; sourceTree = "<group>"; };
+		58B252CC18B8FDFF00ACC2FF /* ViewBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewBackground.png; sourceTree = "<group>"; };
+		58B252CD18B8FDFF00ACC2FF /* ViewBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ViewBackground@2x.png"; sourceTree = "<group>"; };
+		58B252D218B8FE1400ACC2FF /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		58B252D318B8FE1400ACC2FF /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		58B252D418B8FE1400ACC2FF /* PIDialerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIDialerViewController.h; sourceTree = "<group>"; };
+		58B252D518B8FE1400ACC2FF /* PIDialerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIDialerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58B2528D18B8FDAC00ACC2FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B2529618B8FDAC00ACC2FF /* CoreGraphics.framework in Frameworks */,
+				58B2529818B8FDAC00ACC2FF /* UIKit.framework in Frameworks */,
+				58B2529418B8FDAC00ACC2FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58B252AE18B8FDAC00ACC2FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B252B318B8FDAC00ACC2FF /* XCTest.framework in Frameworks */,
+				58B252B518B8FDAC00ACC2FF /* UIKit.framework in Frameworks */,
+				58B252B418B8FDAC00ACC2FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58B2528718B8FDAC00ACC2FF = {
+			isa = PBXGroup;
+			children = (
+				58B252C818B8FDDC00ACC2FF /* CurcularDial */,
+				58B2529918B8FDAC00ACC2FF /* PICircularDial */,
+				58B252B818B8FDAC00ACC2FF /* PICircularDialTests */,
+				58B2529218B8FDAC00ACC2FF /* Frameworks */,
+				58B2529118B8FDAC00ACC2FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58B2529118B8FDAC00ACC2FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58B2529018B8FDAC00ACC2FF /* PICircularDial.app */,
+				58B252B118B8FDAC00ACC2FF /* PICircularDialTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58B2529218B8FDAC00ACC2FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58B2529318B8FDAC00ACC2FF /* Foundation.framework */,
+				58B2529518B8FDAC00ACC2FF /* CoreGraphics.framework */,
+				58B2529718B8FDAC00ACC2FF /* UIKit.framework */,
+				58B252B218B8FDAC00ACC2FF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B2529918B8FDAC00ACC2FF /* PICircularDial */ = {
+			isa = PBXGroup;
+			children = (
+				58B252A218B8FDAC00ACC2FF /* PIAppDelegate.h */,
+				58B252A318B8FDAC00ACC2FF /* PIAppDelegate.m */,
+				58B252A518B8FDAC00ACC2FF /* Main.storyboard */,
+				58B252A818B8FDAC00ACC2FF /* PIViewController.h */,
+				58B252A918B8FDAC00ACC2FF /* PIViewController.m */,
+				58B252AB18B8FDAC00ACC2FF /* Images.xcassets */,
+				58B2529A18B8FDAC00ACC2FF /* Supporting Files */,
+			);
+			path = PICircularDial;
+			sourceTree = "<group>";
+		};
+		58B2529A18B8FDAC00ACC2FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58B2529B18B8FDAC00ACC2FF /* PICircularDial-Info.plist */,
+				58B2529C18B8FDAC00ACC2FF /* InfoPlist.strings */,
+				58B2529F18B8FDAC00ACC2FF /* main.m */,
+				58B252A118B8FDAC00ACC2FF /* PICircularDial-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58B252B818B8FDAC00ACC2FF /* PICircularDialTests */ = {
+			isa = PBXGroup;
+			children = (
+				58B252BE18B8FDAC00ACC2FF /* PICircularDialTests.m */,
+				58B252B918B8FDAC00ACC2FF /* Supporting Files */,
+			);
+			path = PICircularDialTests;
+			sourceTree = "<group>";
+		};
+		58B252B918B8FDAC00ACC2FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58B252BA18B8FDAC00ACC2FF /* PICircularDialTests-Info.plist */,
+				58B252BB18B8FDAC00ACC2FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58B252C818B8FDDC00ACC2FF /* CurcularDial */ = {
+			isa = PBXGroup;
+			children = (
+				58B252D218B8FE1400ACC2FF /* CircleView.h */,
+				58B252D318B8FE1400ACC2FF /* CircleView.m */,
+				58B252D418B8FE1400ACC2FF /* PIDialerViewController.h */,
+				58B252D518B8FE1400ACC2FF /* PIDialerViewController.m */,
+				58B252C918B8FDFF00ACC2FF /* RotetorImages */,
+			);
+			path = CurcularDial;
+			sourceTree = "<group>";
+		};
+		58B252C918B8FDFF00ACC2FF /* RotetorImages */ = {
+			isa = PBXGroup;
+			children = (
+				58B252CA18B8FDFF00ACC2FF /* circle.png */,
+				58B252CB18B8FDFF00ACC2FF /* CircleBackground.png */,
+				58B252CC18B8FDFF00ACC2FF /* ViewBackground.png */,
+				58B252CD18B8FDFF00ACC2FF /* ViewBackground@2x.png */,
+			);
+			path = RotetorImages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58B2528F18B8FDAC00ACC2FF /* PICircularDial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B252C218B8FDAC00ACC2FF /* Build configuration list for PBXNativeTarget "PICircularDial" */;
+			buildPhases = (
+				58B2528C18B8FDAC00ACC2FF /* Sources */,
+				58B2528D18B8FDAC00ACC2FF /* Frameworks */,
+				58B2528E18B8FDAC00ACC2FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PICircularDial;
+			productName = PICircularDial;
+			productReference = 58B2529018B8FDAC00ACC2FF /* PICircularDial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58B252B018B8FDAC00ACC2FF /* PICircularDialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58B252C518B8FDAC00ACC2FF /* Build configuration list for PBXNativeTarget "PICircularDialTests" */;
+			buildPhases = (
+				58B252AD18B8FDAC00ACC2FF /* Sources */,
+				58B252AE18B8FDAC00ACC2FF /* Frameworks */,
+				58B252AF18B8FDAC00ACC2FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58B252B718B8FDAC00ACC2FF /* PBXTargetDependency */,
+			);
+			name = PICircularDialTests;
+			productName = PICircularDialTests;
+			productReference = 58B252B118B8FDAC00ACC2FF /* PICircularDialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58B2528818B8FDAC00ACC2FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PI;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Pavan Itagi";
+				TargetAttributes = {
+					58B252B018B8FDAC00ACC2FF = {
+						TestTargetID = 58B2528F18B8FDAC00ACC2FF;
+					};
+				};
+			};
+			buildConfigurationList = 58B2528B18B8FDAC00ACC2FF /* Build configuration list for PBXProject "PICircularDial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58B2528718B8FDAC00ACC2FF;
+			productRefGroup = 58B2529118B8FDAC00ACC2FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58B2528F18B8FDAC00ACC2FF /* PICircularDial */,
+				58B252B018B8FDAC00ACC2FF /* PICircularDialTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58B2528E18B8FDAC00ACC2FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B252D018B8FDFF00ACC2FF /* ViewBackground.png in Resources */,
+				58B252AC18B8FDAC00ACC2FF /* Images.xcassets in Resources */,
+				58B2529E18B8FDAC00ACC2FF /* InfoPlist.strings in Resources */,
+				58B252D118B8FDFF00ACC2FF /* ViewBackground@2x.png in Resources */,
+				58B252A718B8FDAC00ACC2FF /* Main.storyboard in Resources */,
+				58B252CF18B8FDFF00ACC2FF /* CircleBackground.png in Resources */,
+				58B252CE18B8FDFF00ACC2FF /* circle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58B252AF18B8FDAC00ACC2FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B252BD18B8FDAC00ACC2FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58B2528C18B8FDAC00ACC2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B252D718B8FE1400ACC2FF /* PIDialerViewController.m in Sources */,
+				58B252D618B8FE1400ACC2FF /* CircleView.m in Sources */,
+				58B252A018B8FDAC00ACC2FF /* main.m in Sources */,
+				58B252AA18B8FDAC00ACC2FF /* PIViewController.m in Sources */,
+				58B252A418B8FDAC00ACC2FF /* PIAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58B252AD18B8FDAC00ACC2FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B252BF18B8FDAC00ACC2FF /* PICircularDialTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58B252B718B8FDAC00ACC2FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58B2528F18B8FDAC00ACC2FF /* PICircularDial */;
+			targetProxy = 58B252B618B8FDAC00ACC2FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58B2529C18B8FDAC00ACC2FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58B2529D18B8FDAC00ACC2FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58B252A518B8FDAC00ACC2FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58B252A618B8FDAC00ACC2FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58B252BB18B8FDAC00ACC2FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58B252BC18B8FDAC00ACC2FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58B252C018B8FDAC00ACC2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58B252C118B8FDAC00ACC2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58B252C318B8FDAC00ACC2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PICircularDial/PICircularDial-Prefix.pch";
+				INFOPLIST_FILE = "PICircularDial/PICircularDial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58B252C418B8FDAC00ACC2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PICircularDial/PICircularDial-Prefix.pch";
+				INFOPLIST_FILE = "PICircularDial/PICircularDial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		58B252C618B8FDAC00ACC2FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PICircularDial.app/PICircularDial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PICircularDial/PICircularDial-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PICircularDialTests/PICircularDialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		58B252C718B8FDAC00ACC2FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PICircularDial.app/PICircularDial";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PICircularDial/PICircularDial-Prefix.pch";
+				INFOPLIST_FILE = "PICircularDialTests/PICircularDialTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58B2528B18B8FDAC00ACC2FF /* Build configuration list for PBXProject "PICircularDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B252C018B8FDAC00ACC2FF /* Debug */,
+				58B252C118B8FDAC00ACC2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58B252C218B8FDAC00ACC2FF /* Build configuration list for PBXNativeTarget "PICircularDial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B252C318B8FDAC00ACC2FF /* Debug */,
+				58B252C418B8FDAC00ACC2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58B252C518B8FDAC00ACC2FF /* Build configuration list for PBXNativeTarget "PICircularDialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58B252C618B8FDAC00ACC2FF /* Debug */,
+				58B252C718B8FDAC00ACC2FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58B2528818B8FDAC00ACC2FF /* Project object */;
+}
