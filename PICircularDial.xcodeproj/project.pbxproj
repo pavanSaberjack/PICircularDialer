@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D7A515D191ACBBE009B0DCA /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A515A191ACBBE009B0DCA /* PDKeychainBindings.m */; };
+		3D7A515E191ACBBE009B0DCA /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A515C191ACBBE009B0DCA /* PDKeychainBindingsController.m */; };
 		58B2529418B8FDAC00ACC2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529318B8FDAC00ACC2FF /* Foundation.framework */; };
 		58B2529618B8FDAC00ACC2FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529518B8FDAC00ACC2FF /* CoreGraphics.framework */; };
 		58B2529818B8FDAC00ACC2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B2529718B8FDAC00ACC2FF /* UIKit.framework */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7A5159191ACBBE009B0DCA /* PDKeychainBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindings.h; sourceTree = "<group>"; };
+		3D7A515A191ACBBE009B0DCA /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
+		3D7A515B191ACBBE009B0DCA /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
+		3D7A515C191ACBBE009B0DCA /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
 		58B2529018B8FDAC00ACC2FF /* PICircularDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICircularDial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B2529318B8FDAC00ACC2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		58B2529518B8FDAC00ACC2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,9 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D7A5158191ACBBE009B0DCA /* PDKeychainBindingsController */ = {
+			isa = PBXGroup;
+			children = (
+				3D7A5159191ACBBE009B0DCA /* PDKeychainBindings.h */,
+				3D7A515A191ACBBE009B0DCA /* PDKeychainBindings.m */,
+				3D7A515B191ACBBE009B0DCA /* PDKeychainBindingsController.h */,
+				3D7A515C191ACBBE009B0DCA /* PDKeychainBindingsController.m */,
+			);
+			path = PDKeychainBindingsController;
+			sourceTree = "<group>";
+		};
 		58B2528718B8FDAC00ACC2FF = {
 			isa = PBXGroup;
 			children = (
+				3D7A5158191ACBBE009B0DCA /* PDKeychainBindingsController */,
 				58B252C818B8FDDC00ACC2FF /* CurcularDial */,
 				58B2529918B8FDAC00ACC2FF /* PICircularDial */,
 				58B252B818B8FDAC00ACC2FF /* PICircularDialTests */,
@@ -295,7 +313,9 @@
 				58B252D718B8FE1400ACC2FF /* PIDialerViewController.m in Sources */,
 				58B252D618B8FE1400ACC2FF /* CircleView.m in Sources */,
 				58B252A018B8FDAC00ACC2FF /* main.m in Sources */,
+				3D7A515D191ACBBE009B0DCA /* PDKeychainBindings.m in Sources */,
 				58B252AA18B8FDAC00ACC2FF /* PIViewController.m in Sources */,
+				3D7A515E191ACBBE009B0DCA /* PDKeychainBindingsController.m in Sources */,
 				58B252A418B8FDAC00ACC2FF /* PIAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +525,7 @@
 				58B252C418B8FDAC00ACC2FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58B252C518B8FDAC00ACC2FF /* Build configuration list for PBXNativeTarget "PICircularDialTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				58B252C718B8FDAC00ACC2FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

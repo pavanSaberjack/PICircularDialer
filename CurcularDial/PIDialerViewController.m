@@ -8,6 +8,7 @@
 
 #import "PIDialerViewController.h"
 #import "CircleView.h"
+#import "PDKeychainBindings.h"
 
 NSString *const PasswordKey = @"Password";
 
@@ -123,6 +124,8 @@ NSString *const AlertTitle = @"Hello";
 #pragma mark - UIButton action methods
 - (void)setPasswordButtonClicked:(UIButton *)sender
 {
+    PDKeychainBindings *bindings = [PDKeychainBindings sharedKeychainBindings];
+
     if (self.viewtype == eSetPassword)
     {
         if ([self.valLabel.text length] < 4)
@@ -132,14 +135,16 @@ NSString *const AlertTitle = @"Hello";
             return;
         }
         
-        [[NSUserDefaults standardUserDefaults] setValue:self.valLabel.text forKey:PasswordKey];
+        //[[NSUserDefaults standardUserDefaults] setValue:self.valLabel.text forKey:PasswordKey];
+        [bindings setObject:self.valLabel.text forKey:PasswordKey];
         
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:AlertTitle message:@"Your Password is set." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
     }
     else
     {
-        if ([[[NSUserDefaults standardUserDefaults] valueForKey:PasswordKey] isEqualToString:self.valLabel.text])
+       // if ([[[NSUserDefaults standardUserDefaults] valueForKey:PasswordKey] isEqualToString:self.valLabel.text])
+       if ([[[bindings objectForKey:PasswordKey] stringValue] isEqualToString:self.valLabel.text])
         {
             UIAlertView * alert = [[UIAlertView alloc] initWithTitle:AlertTitle message:@"Perfect" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
             [alert show];
@@ -153,7 +158,7 @@ NSString *const AlertTitle = @"Hello";
         [self.valLabel setText:@""];
     }
     
-    [[NSUserDefaults standardUserDefaults] synchronize];
+   // [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)backButtonClicked:(UIButton *)sender
